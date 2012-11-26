@@ -11,5 +11,5 @@
 @interface DemoShowView : UIView 
 
 @property (nonatomic, strong)   UILabel *label;
-
+@property (nonatomic, strong)   UIImageView *imgView;
 @end

@@ -11,6 +11,7 @@
 @implementation DemoShowView
 
 @synthesize label = _label;
+@synthesize imgView = _imgView;
 
 - (id)initWithFrame:(CGRect)frame
 {
@@ -22,6 +23,16 @@
         _label.numberOfLines = 0;
         _label.textColor = [UIColor whiteColor];
         [self addSubview:_label];
+        
+        
+        
+        
+        _imgView = [[UIImageView alloc] initWithFrame:self.bounds];
+        _imgView.autoresizingMask = UIViewAutoresizingFlexibleHeight|UIViewAutoresizingFlexibleWidth|UIViewAutoresizingFlexibleLeftMargin|UIViewAutoresizingFlexibleRightMargin|UIViewAutoresizingFlexibleTopMargin|UIViewAutoresizingFlexibleBottomMargin;
+        
+        [self addSubview:_imgView];
+        
+        
         
         self.backgroundColor = [UIColor blueColor];
     }

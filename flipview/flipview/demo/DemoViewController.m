@@ -71,7 +71,12 @@
 
 - (UIView*)flipView:(MTDragFlipView*)flipView subViewAtIndex:(NSInteger)index
 {
-    _showerView.label.text = [_model.data objectAtIndex:index];
+    _showerView.imgView.image = [UIImage imageNamed:[_model.data objectAtIndex:index]];
+    
+    
+    
+    
+    
     return _showerView;
 }
 
@@ -96,7 +101,9 @@
         view = [[DemoAnimationView alloc] initWithFrame:CGRectMake(0, 0, 320, 460)];
         view.indentify = indentify;
     }
-    view.text = [_model.data objectAtIndex:index];
+    //view.text = [_model.data objectAtIndex:index];
+    
+    view.imageContent = [UIImage imageNamed:[_model.data objectAtIndex:index]];
     return view;
 }
 
